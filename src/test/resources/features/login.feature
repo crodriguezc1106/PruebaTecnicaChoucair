@@ -7,10 +7,10 @@ Característica: Login y Navegación
     Cuando el usuario ingresa las credenciales
     Entonces el usuario se logueo exitosamente
 
-#  Escenario: Crear una organización
-#    Dado el usuario ingresa a la opción organización
-#    Y el usuario ingresa a la opción unidades de negocio
-#    Y el usario ingresa a crear Business Unit
-#    Cuando el usuario ingresa los datos
-#    Y el usario guarda los datos
-#    Entonces el usuario crea una unidad de negocio
+ Escenario: Crear un nuevo recluta
+   Dado el usuario ingresa a la opción Recruitment
+   Y el usuario ingresa en la opción +add
+   Y el usuario introduce los datos full name
+   Y el usuario introduce el Email
+   Cuando el usuario guarda los datos
+   Entonces se muestra los datos del recluta creado

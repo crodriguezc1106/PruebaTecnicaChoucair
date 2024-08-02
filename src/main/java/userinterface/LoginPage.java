@@ -14,6 +14,12 @@ public class LoginPage {
 
     public static final Target BTN_LOGIN = Target.the("clic en el botón login")
             .locatedBy("//button[@type='submit']");
+
+    public static final Target BTN_RECRUITMENT = Target.the("Ingresar a la opción recruitment")
+            .locatedBy("//a[@class='oxd-main-menu-item active']");
+
+    public static final Target BTN_ADD = Target.the("Agregar un nuevo candidato")
+            .locatedBy("//button[@type='button']");
 }
 
 

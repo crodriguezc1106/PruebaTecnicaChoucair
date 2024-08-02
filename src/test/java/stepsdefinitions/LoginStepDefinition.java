@@ -38,4 +38,31 @@ public class LoginStepDefinition {
     @Entonces("el usuario se logueo exitosamente")
     public void elUsuarioSeLogueoExitosamente() {
     }
+
+    @Dado("el usuario ingresa a la opción Recruitment")
+    public void elUsuarioIngresaALaOpciónRecruitment() {
+        OnStage.theActorInTheSpotlight().attemptsTo(Login.enter());
+    }
+
+    @Dado("el usuario ingresa en la opción +add")
+    public void elUsuarioIngresaEnLaOpciónAdd() {
+        OnStage.theActorInTheSpotlight().attemptsTo(Login.enter());
+    }
+
+    @Dado("el usuario introduce los datos full name")
+    public void elUsuarioIntroduceLosDatosFullName() {
+    }
+
+    @Dado("el usuario introduce el Email")
+    public void elUsuarioIntroduceElEmail() {
+    }
+
+    @Cuando("el usuario guarda los datos")
+    public void elUsuarioGuardaLosDatos() {
+    }
+
+    @Entonces("se muestra los datos del recluta creado")
+    public void seMuestraLosDatosDelReclutaCreado() {
+    }
+
 }
