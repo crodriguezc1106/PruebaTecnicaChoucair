@@ -5,11 +5,14 @@ import io.cucumber.java.es.Cuando;
 import io.cucumber.java.es.Dado;
 import io.cucumber.java.es.Entonces;
 import net.serenitybdd.annotations.Managed;
+import net.serenitybdd.screenplay.GivenWhenThen;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actions.Open;
 import net.serenitybdd.screenplay.actors.Cast;
 import net.serenitybdd.screenplay.actors.OnStage;
+import org.hamcrest.Matchers;
 import org.openqa.selenium.WebDriver;
+import questions.ValidationData;
 import task.Login;
 
 public class LoginStepDefinition {
@@ -37,6 +40,8 @@ public class LoginStepDefinition {
 
     @Entonces("el usuario se logueo exitosamente")
     public void elUsuarioSeLogueoExitosamente() {
+        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(ValidationData.validation()
+        , Matchers.is("")));
     }
 
     @Dado("el usuario ingresa a la opción Recruitment")
