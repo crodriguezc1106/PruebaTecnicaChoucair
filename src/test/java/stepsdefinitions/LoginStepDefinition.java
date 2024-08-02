@@ -51,14 +51,17 @@ public class LoginStepDefinition {
 
     @Dado("el usuario introduce los datos full name")
     public void elUsuarioIntroduceLosDatosFullName() {
+        OnStage.theActorInTheSpotlight().attemptsTo(Login.enter());
     }
 
     @Dado("el usuario introduce el Email")
     public void elUsuarioIntroduceElEmail() {
+        OnStage.theActorInTheSpotlight().attemptsTo(Login.enter());
     }
 
     @Cuando("el usuario guarda los datos")
     public void elUsuarioGuardaLosDatos() {
+        OnStage.theActorInTheSpotlight().attemptsTo(Login.enter());
     }
 
     @Entonces("se muestra los datos del recluta creado")

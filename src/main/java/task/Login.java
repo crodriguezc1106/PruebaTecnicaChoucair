@@ -30,6 +30,10 @@ public class Login implements Task {
         actor.attemptsTo(Click.on(LoginPage.BTN_RECRUITMENT));
         actor.attemptsTo(Click.on(LoginPage.BTN_ADD));
 
+        actor.attemptsTo(Enter.theValue("catherine").into(LoginPage.TXT_NAME));
+        actor.attemptsTo(Enter.theValue("test@test.com").into(LoginPage.TXT_EMAIL));
+        actor.attemptsTo(Click.on(LoginPage.BTN_SAVE));
+
     }
 
 
