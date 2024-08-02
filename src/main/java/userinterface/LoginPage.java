@@ -16,10 +16,10 @@ public class LoginPage {
             .locatedBy("//button[@type='submit']");
 
     public static final Target BTN_RECRUITMENT = Target.the("Ingresar a la opción recruitment")
-            .locatedBy("//a[@class='oxd-main-menu-item active']");
+            .locatedBy("//a[@href='/web/index.php/recruitment/viewRecruitmentModule']");
 
     public static final Target BTN_ADD = Target.the("Agregar un nuevo candidato")
-            .locatedBy("//button[@type='button']");
+            .locatedBy("//button[@class='oxd-button oxd-button--medium oxd-button--secondary']");
 }
 
 
